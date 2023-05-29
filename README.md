@@ -124,3 +124,33 @@
     →전세계DNS는 연결되어 있다.
     
     →장애가 발생할 경우, 클라이언트가 각종 서비스에 접속할 ‘문’이 사라진 것과 마찬가지이므로 서비스를 이용할 수 없을 뿐더러 막대한 피해가 발생함.
+    
+## 2주차-Django 구조 및 작동 원리/Django CRUD API 구현
+### ch13-1. DRF 설치 및 프로젝트 생성
+
+1. pip install pipenv
+2. pipenv shell
+3. pipenv install djangorestframework
+4. django-admin startproject DjangoApi (프로젝트 생성)
+5. 파이썬 가상환경 활성화시키기
+
+### ch13-2. Django App추가
+
+1. python .\manage.py startapp products (앱 생성)
+2. [settings.py](http://settings.py) 에 APPS에 연결해주기
+
+### ch13-3. CORS 설정
+
+1. pipenv install django-cors-headers
+2. [settings.py](http://settings.py)에 middleware 에 추가해주기
+3. [settings.py](http://settings.py)에 CORS_ORIGIN_ALLOW_ALL = True 추가
+
+### ch14-1. 모델 및 마이그레이션
+
+1. [models.py](http://models.py) 에 모델 class 정의하기
+2. makemigrations 
+3. migrate
+
+### ch14-2. Serializer
+
+:데이터 파일을 json화 하기 위한 작업
